@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/BaseToolbarStyle"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:id="@+id/tv_work_mode_logout_administrator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/logout_administrator"
+            android:textColor="@drawable/simple_text_selector"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/BaseToolbarTitleStyle"
+            android:text="@string/work_mode"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_work_mode_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/setting"
+                android:textColor="@drawable/simple_text_selector"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_work_mode_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/refresh"
+                android:textColor="@drawable/simple_text_selector"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        style="@style/horizontal_parting_line_blue"></View>
+
+    <TextView
+        android:id="@+id/tv_work_mode_tourist_model"
+        style="@style/NormalBlueTextSizeStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/lightBlue"
+        android:gravity="center"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgColor"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/work_mode_admin_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/white"
+                app:tabIndicatorHeight="0dp"
+                app:tabSelectedTextColor="@color/textBlue"
+                app:tabTextColor="@color/textGray"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/work_mode_admin_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_work_mode_admin_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:overScrollMode="never"
+                app:layoutManager="LinearLayoutManager"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

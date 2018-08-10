@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_bottom_title">
+        <item>@string/homepage</item>
+        <item>@string/work_mode</item>
+        <item>@string/historical_data</item>
+        <item>@string/about_us</item>
+    </string-array>
+
+    <integer-array name="main_bottom_icon">
+        <item>@drawable/main_bottom_homepage</item>
+        <item>@drawable/main_bottom_work_mode</item>
+        <item>@drawable/main_bottom_historical_data</item>
+        <item>@drawable/main_bottom_about_us</item>
+    </integer-array>
+
+    <string-array name="homepage_title">
+        <item>@string/solar_panel</item>
+        <item>@string/battery</item>
+        <item>@string/load</item>
+    </string-array>
+
+    <integer-array name="homepage_icon">
+        <item>@drawable/homepage_solar_panel</item>
+        <item>@drawable/homepage_battery</item>
+        <item>@drawable/homepage_load</item>
+    </integer-array>
+
+    <string-array name="homepage_solar_panel_title">
+        <item>@string/charging_voltage</item>
+        <item>@string/charging_current</item>
+        <item>@string/charging_power</item>
+    </string-array>
+
+    <string-array name="homepage_battery_title">
+        <item>@string/voltage</item>
+        <item>@string/current</item>
+        <item>@string/electricity</item>
+        <item>@string/temperature</item>
+    </string-array>
+
+    <string-array name="homepage_load_title">
+        <item>@string/load_brightness</item>
+        <item>@string/voltage</item>
+        <item>@string/current</item>
+        <item>@string/load_power</item>
+    </string-array>
+
+
+    <string-array name="about_us_title">
+        <item>@string/company_name</item>
+        <item>@string/company_address</item>
+        <item>@string/customer_hotline</item>
+        <item>@string/company_official_website</item>
+        <item>@string/contact_mailbox</item>
+        <item>@string/engineering_case</item>
+    </string-array>
+
+    <integer-array name="about_us_icon">
+        <item>@mipmap/ic_company_name</item>
+        <item>@mipmap/ic_company_name</item>
+        <item>@mipmap/ic_customer_hotline</item>
+        <item>@mipmap/ic_company_official_website</item>
+        <item>@mipmap/ic_contact_mailbox</item>
+        <item>@mipmap/ic_engineering_case</item>
+    </integer-array>
+
+    <string-array name="device_information_title">
+        <item>@string/device_type</item>
+        <item>@string/hardware_version</item>
+        <item>@string/firmware_version</item>
+    </string-array>
+
+    <string-array name="l_first_title">
+        <item>@string/first_time_colon</item>
+        <item>@string/first_power_colon</item>
+        <!--<item>@string/first_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="l_second_title">
+        <item>@string/second_time_colon</item>
+        <item>@string/second_power_colon</item>
+        <!--<item>@string/second_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="l_three_title">
+        <item>@string/three_time_colon</item>
+        <item>@string/three_power_colon</item>
+        <!--<item>@string/three_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="l_four_title">
+        <item>@string/four_time_colon</item>
+        <item>@string/four_power_colon</item>
+        <!--<item>@string/four_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="t_first_title">
+        <item>@string/first_time_colon</item>
+        <item>@string/first_power_colon</item>
+        <!--<item>@string/first_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="t_second_title">
+        <item>@string/second_time_colon</item>
+        <item>@string/second_power_colon</item>
+        <!--<item>@string/second_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="t_three_title">
+        <item>@string/three_time_colon</item>
+        <item>@string/three_power_colon</item>
+        <!--<item>@string/three_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="t_four_title">
+        <item>@string/morning_time_colon</item>
+        <item>@string/morning_power_colon</item>
+        <!--<item>@string/morning_color_temperature_colon</item>-->
+    </string-array>
+
+
+
+    <string-array name="m_first_title">
+        <item>@string/first_time_colon</item>
+        <item>@string/first_power_colon</item>
+        <!--<item>@string/first_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="m_second_title">
+        <item>@string/second_time_colon</item>
+        <item>@string/have_one_power_colon</item>
+        <!--<item>@string/have_one_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="m_three_title">
+        <item>@string/induction_delay_colon</item>
+        <item>@string/no_one_power_colon</item>
+        <!--<item>@string/have_two_power_colon</item>-->
+    </string-array>
+
+    <string-array name="m_four_title">
+        <!--<item>@string/have_two_color_temperature_colon</item>-->
+        <item>@string/no_two_power_colon</item>
+        <!--<item>@string/no_people_color_temperature_colon</item>-->
+        <item>@string/have_two_power_colon</item>
+    </string-array>
+
+    <string-array name="u_first_title">
+        <item>@string/first_time_colon</item>
+        <item>@string/first_power_colon</item>
+        <!--<item>@string/first_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="u_second_title">
+        <item>@string/second_time_colon</item>
+        <item>@string/second_power_colon</item>
+        <!--<item>@string/second_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="u_three_title">
+        <item>@string/three_time_colon</item>
+        <item>@string/three_power_colon</item>
+        <!--<item>@string/three_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="u_four_title">
+        <item>@string/induction_delay_colon</item>
+        <item>@string/no_people_power_colon</item>
+        <!--<item>@string/no_people_color_temperature_colon</item>-->
+    </string-array>
+
+    <string-array name="work_mode_title">
+        <item>@string/light_control_voltage</item>
+        <item>@string/light_control_delay</item>
+        <item>@string/load_current</item>
+        <item>@string/color_light_source</item>
+        <item>@string/smart_power</item>
+        <item>@string/temperature_protection</item>
+        <item>@string/induction_distance</item>
+        <item>@string/music_switch</item>
+        <item>@string/over_charge_voltage</item>
+        <item>@string/over_charge_return</item>
+        <item>@string/over_discharge_return</item>
+        <item>@string/over_discharge_voltage</item>
+    </string-array>
+
+    <integer-array name="work_mode_icon">
+        <item>@mipmap/ic_light_control_voltage</item>
+        <item>@mipmap/ic_light_control_delay</item>
+        <item>@mipmap/ic_load_current</item>
+        <item>@mipmap/ic_color_light_source</item>
+        <item>@mipmap/ic_smart_power</item>
+        <item>@mipmap/ic_temperature_protection</item>
+        <item>@mipmap/ic_induction_distance</item>
+        <item>@mipmap/ic_music_switch</item>
+        <item>@mipmap/ic_overcharge_voltage</item>
+        <item>@mipmap/ic_overcharge_return</item>
+        <item>@mipmap/ic_over_discharge_return</item>
+        <item>@mipmap/ic_over_discharge_voltage</item>
+    </integer-array>
+
+    <string-array name="work_mode_admin_title">
+        <item>@string/T_mode</item>
+        <item>@string/M_mode</item>
+        <item>@string/L_mode</item>
+        <item>@string/U_mode</item>
+    </string-array>
+
+    <string-array name="historical_data_non_admin_chart_title">
+        <item>@string/battery_voltage</item>
+        <item>@string/temperature</item>
+    </string-array>
+
+    <string-array name="historical_data_non_admin_content_title">
+        <item>@string/running_days</item>
+        <item>@string/over_discharge_times</item>
+        <item>@string/filling_time</item>
+        <item>@string/current_temperature</item>
+    </string-array>
+
+    <string-array name="historical_data_admin_title">
+        <item>@string/basic_data</item>
+        <item>@string/administrator_data</item>
+    </string-array>
+
+    <string-array name="historical_data_admin_chart_title">
+        <item>@string/day_generating_capacity</item>
+        <item>@string/day_power_consumption</item>
+        <item>@string/day_charge_apm_hour</item>
+        <item>@string/day_discharge_apm_hour</item>
+    </string-array>
+
+    <string-array name="historical_data_admin_content_title">
+        <item>@string/battery_temperature</item>
+        <item>@string/protective_plate_temperature</item>
+        <item>@string/control_board_temperature</item>
+    </string-array>
+
+    <string-array name="color_light_source_title">
+        <item>@string/flicker</item>
+        <item>@string/red</item>
+        <item>@string/green</item>
+        <item>@string/blue</item>
+        <item>@string/red_green</item>
+        <item>@string/red_blue</item>
+        <item>@string/green_blue</item>
+        <item>@string/put_out</item>
+    </string-array>
+
+    <string-array name="smart_power_title">
+        <item>@string/close</item>
+        <item>@string/one_level</item>
+        <item>@string/two_level</item>
+        <item>@string/three_level</item>
+        <item>@string/four_level</item>
+        <item>@string/five_level</item>
+        <item>@string/six_level</item>
+        <item>@string/seven_level</item>
+        <item>@string/eight_level</item>
+        <item>@string/automatic</item>
+    </string-array>
+
+    <string-array name="induction_distance_title">
+        <item>@string/one_level</item>
+        <item>@string/two_level</item>
+        <item>@string/three_level</item>
+        <item>@string/four_level</item>
+        <item>@string/five_level</item>
+        <item>@string/six_level</item>
+        <item>@string/seven_level</item>
+        <item>@string/eight_level</item>
+    </string-array>
+
+    <string-array name="fault_info_title">
+        <item>@string/b16</item>
+        <item>@string/b17</item>
+        <item>@string/b18</item>
+        <item>@string/b19</item>
+        <item>@string/b20</item>
+        <item>@string/b21</item>
+        <item>@string/b22</item>
+        <item>@string/b23</item>
+        <item>@string/b24</item>
+        <item>@string/b25</item>
+        <item>@string/b26</item>
+        <item>@string/b27</item>
+        <item>@string/b28</item>
+        <item>@string/b29</item>
+        <item>@string/b30</item>
+    </string-array>
+
+    <string-array name="color_temperature_title">
+        <item>@string/automatic</item>
+        <item>@string/warm_white</item>
+        <item>@string/natural_white</item>
+        <item>@string/cool_white</item>
+    </string-array>
+
+</resources>

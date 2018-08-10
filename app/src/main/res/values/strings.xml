@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">源码</string>
+
+    <string name="login">登录</string>
+    <string name="please_enter_the_login_account">请输入登录账号</string>
+    <string name="please_enter_the_login_password">请输入登录密码</string>
+    <string name="hint_account_or_password_error">账号或密码错误</string>
+
+
+    <string name="homepage">首页</string>
+    <string name="work_mode">工作模式</string>
+    <string name="historical_data">历史数据</string>
+    <string name="about_us">关于我们</string>
+
+    <string name="default_text">--</string>
+
+    <string name="company_name">公司名称</string>
+    <string name="company_address">公司地址</string>
+    <string name="customer_hotline">客户热线</string>
+    <string name="company_official_website">公司官网</string>
+    <string name="contact_mailbox">联系邮箱</string>
+    <string name="engineering_case">工程案例</string>
+
+    <string name="company_name_content">深圳源创智能照明有限公司</string>
+    <string name="company_address_content">深圳市宝安区西乡街道固戍开发区泰华梧桐工业园13A栋6&#8211;7F</string>
+    <string name="customer_hotline_content">400&#8211;800&#8211;8526</string>
+    <string name="company_official_website_content">http://www.socreat.cn/</string>
+    <string name="contact_mailbox_content">xiangbaichuan@socreat.cn</string>
+    <string name="engineering_case_website_content">http://mp.weixin.qq.com/mp/homepage?__biz=MzA3NzkyMzkwOQ==&amp;hid=1&amp;sn=88b4c2470981403d731c983bfa4d3af2#wechat_redirect</string>
+    <string name="hint_scan_qr_code">扫描二维码\n关注官方微信公众号</string>
+
+    <string name="solar_panel">太阳能板</string>
+    <string name="battery">电池</string>
+    <string name="load">负载</string>
+
+    <string name="device_information">设备信息</string>
+    <string name="device_testing">设备检测</string>
+    <string name="start_testing">开始检测</string>
+    <string name="being_testing">正在检测&#8230;</string>
+    <string name="no_abnormal_device">没有异常设备</string>
+    <string name="format_abnormal_device">异常设备%1$d</string>
+    <string name="click_testing">点击开始检测设备状态是否正常</string>
+    <string name="being_testing_and_waiting">正在检测,请稍后&#8230;</string>
+    <string name="testing_normal">您的设备一切正常,请放心使用</string>
+    <string name="testing_abnormal">您的设备发生异常,请及时修整</string>
+    <string name="charging_voltage">充电电压</string>
+    <string name="charging_power">充电功率</string>
+    <string name="charging_current">充电电流</string>
+    <string name="voltage">电压</string>
+    <string name="current">电流</string>
+    <string name="electricity">电量</string>
+    <string name="load_power">负载功率</string>
+    <string name="load_brightness">负载亮度</string>
+    <string name="test_the_lights">测试亮灯</string>
+    <string name="test_success">测试成功</string>
+    <string name="test_failed">测试失败</string>
+    <string name="normal">正常</string>
+    <string name="abnormal">异常</string>
+    <string name="charging">充电</string>
+    <string name="discharging">放电</string>
+
+    <string name="disconnected">未连接</string>
+    <string name="connecting">连接中&#8230;</string>
+    <string name="connected">已连接</string>
+    <string name="history_connect">历史连接</string>
+    <string name="other_device">其他设备</string>
+    <string name="refresh">刷新</string>
+    <string name="clear">清除</string>
+    <string name="setting">设置</string>
+    <string name="hint_rationale_location">扫描蓝牙需要请求定位的权限</string>
+    <string name="hint_no_search_ble_device">搜索不到设备，请检查定位权限是否打开或开启定位服务再试试</string>
+    <string name="device_type">设备型号</string>
+    <string name="hardware_version">硬件版本</string>
+    <string name="firmware_version">固件版本</string>
+    <string name="disconnect_device">断开设备</string>
+    <string name="connect_device">连接设备</string>
+    <string name="connecting_device">正在连接</string>
+    <string name="restore_factory_settings">恢复出厂设置</string>
+    <string name="hint_restore_factory_settings">确定恢复出厂设置吗?</string>
+    <string name="restore_factory_settings_success">恢复出厂设置成功</string>
+    <string name="restore_factory_settings_failed">恢复出厂设置失败</string>
+
+    <string name="logout_administrator">退出管理员</string>
+    <string name="work_mode_tourist_model">当前为游客模式，修改信息请点击此处登录管理员账号</string>
+    <string name="historical_data_tourist_model">当前为游客模式，查看更多信息请点击登录管理员账号</string>
+
+    <string name="T_mode">T模式</string>
+    <string name="M_mode">M模式</string>
+    <string name="L_mode">L模式</string>
+    <string name="U_mode">U模式</string>
+    <string name="first_time_colon">第一时间</string>
+    <string name="second_time_colon">第二时间</string>
+    <string name="three_time_colon">第三时间</string>
+    <string name="four_time_colon">第四时间</string>
+    <string name="first_power_colon">第一功率</string>
+    <string name="second_power_colon">第二功率</string>
+    <string name="three_power_colon">第三功率</string>
+    <string name="four_power_colon">第四功率</string>
+    <string name="first_color_temperature_colon">第一色温</string>
+    <string name="second_color_temperature_colon">第二色温</string>
+    <string name="three_color_temperature_colon">第三色温</string>
+    <string name="four_color_temperature_colon">第四色温</string>
+
+    <string name="morning_time_colon">晨亮时间</string>
+    <string name="morning_power_colon">晨亮功率</string>
+    <string name="morning_color_temperature_colon">晨亮色温</string>
+
+    <string name="have_one_power_colon">有一功率</string>
+    <string name="have_one_color_temperature_colon">有一色温</string>
+    <string name="induction_delay_colon">感应延时</string>
+    <string name="no_one_power_colon">无一功率</string>
+    <string name="have_two_power_colon">有二功率</string>
+    <string name="have_two_color_temperature_colon">有二色温</string>
+    <string name="no_two_power_colon">无二功率</string>
+    <string name="no_people_color_temperature_colon">无人色温</string>
+    <string name="no_people_power_colon">无人功率</string>
+
+    <string name="light_control_voltage">光控电压</string>
+    <string name="between_light_control_voltage">光控电压的数据范围为0.1V到60V</string>
+    <string name="light_control_delay">光控延时</string>
+    <string name="between_light_control_delay">光控延迟的数据范围为0min到60min</string>
+    <string name="load_current">负载电流</string>
+    <string name="color_light_source">彩色光源</string>
+    <string name="smart_power">智能功率</string>
+    <string name="temperature_protection">温度保护</string>
+    <string name="induction_distance">感应距离</string>
+    <string name="music_switch">音乐开关</string>
+    <string name="over_charge_voltage">过充电压</string>
+    <string name="between_over_charge_voltage">过充电压的数据范围为0V到60V</string>
+    <string name="over_charge_return">过充返回</string>
+    <string name="between_over_charge_return">过充返回的数据范围为0V到60V</string>
+    <string name="over_discharge_return">过放返回</string>
+    <string name="between_over_discharge_return">过放返回的数据范围为0V到60V</string>
+    <string name="over_discharge_voltage">过放电压</string>
+    <string name="between_over_discharge_voltage">过放电压的数据范围为0V到60V</string>
+
+    <string name="running_days">运行天数</string>
+    <string name="over_discharge_times">过放次数</string>
+    <string name="filling_time">充满次数</string>
+    <string name="current_temperature">当前温度</string>
+    <string name="minimum_voltage">最低电压</string>
+    <string name="maximum_voltage">最高电压</string>
+    <string name="battery_voltage">电池电压</string>
+    <string name="temperature">温度</string>
+    <string name="basic_data">基础数据</string>
+    <string name="administrator_data">管理员数据</string>
+    <string name="day_generating_capacity">当天发电量</string>
+    <string name="day_power_consumption">当天耗电量</string>
+    <string name="day_charge_apm_hour">当天充电安时数</string>
+    <string name="day_discharge_apm_hour">当天放电安时数</string>
+    <string name="battery_temperature">电池温度</string>
+    <string name="protective_plate_temperature">保护板温度</string>
+    <string name="control_board_temperature">控制板温度</string>
+
+    <string name="format_maximum_voltage">最高电压: %1$sV</string>
+    <string name="format_minimum_voltage">最低电压: %1$sV</string>
+    <string name="format_maximum_temperature">最高温度: %1$s℃</string>
+    <string name="format_minimum_temperature">最低温度: %1$s℃</string>
+    <string name="format_day_generating_capacity">当天发电量: %1$sKWH</string>
+    <string name="format_day_power_consumption">当天耗电量: %1$sKWH</string>
+    <string name="format_day_charge_apm_hour">当天充电安时数: %1$sKAH</string>
+    <string name="format_day_discharge_apm_hour">当天放电安时数: %1$sKAH</string>
+
+    <string name="flicker">闪烁</string>
+    <string name="red">红</string>
+    <string name="green">绿</string>
+    <string name="blue">蓝</string>
+    <string name="red_green">红绿</string>
+    <string name="red_blue">红蓝</string>
+    <string name="green_blue">绿蓝</string>
+    <string name="put_out">熄灭</string>
+    <string name="set_color_light_source_success">设置彩色光源成功</string>
+    <string name="set_color_light_source_failed">设置彩色光源失败</string>
+    <string name="set_smart_power_success">设置智能功率成功</string>
+    <string name="set_smart_power_failed">设置智能功率失败</string>
+    <string name="set_induction_distance_success">设置感应距离成功</string>
+    <string name="set_induction_distance_failed">设置感应距离失败</string>
+    <string name="set_temperature_protection_success">设置温度保护成功</string>
+    <string name="set_temperature_protection_failed">设置温度保护失败</string>
+    <string name="set_music_switch_success">设置音乐开关成功</string>
+    <string name="set_music_switch_failed">设置音乐开关失败</string>
+    <string name="set_light_control_voltage_success">设置光控电压成功</string>
+    <string name="set_light_control_voltage_failed">设置光控电压失败</string>
+    <string name="set_light_control_delay_success">设置光控延迟成功</string>
+    <string name="set_light_control_delay_failed">设置光控延迟失败</string>
+    <string name="set_load_current_success">设置负载电流成功</string>
+    <string name="set_load_current_failed">设置负载电流失败</string>
+    <string name="set_over_charge_voltage_success">设置过充电压成功</string>
+    <string name="set_over_charge_voltage_failed">设置过充电压失败</string>
+    <string name="set_over_charge_return_success">设置过充返回成功</string>
+    <string name="set_over_charge_return_failed">设置过充返回失败</string>
+    <string name="set_over_discharge_voltage_success">设置过放电压成功</string>
+    <string name="set_over_discharge_voltage_failed">设置过放电压失败</string>
+    <string name="set_over_discharge_return_success">设置过放返回成功</string>
+    <string name="set_over_discharge_return_failed">设置过放返回失败</string>
+
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <string name="one_level">1档</string>
+    <string name="two_level">2档</string>
+    <string name="three_level">3档</string>
+    <string name="four_level">4档</string>
+    <string name="five_level">5档</string>
+    <string name="six_level">6档</string>
+    <string name="seven_level">7档</string>
+    <string name="eight_level">8档</string>
+    <string name="automatic">自动</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="input_value">输入数值</string>
+    <string name="hint_input_value">请输入数值</string>
+
+    <string name="please_select_check_time">请选择查看时间</string>
+    <string name="year">年份</string>
+    <string name="all">全部</string>
+
+
+    <string name="b16">蓄电池过放</string>
+    <string name="b17">蓄电池超压</string>
+    <string name="b18">蓄电池欠压警告</string>
+    <string name="b19">负载异常</string>
+    <string name="b20">负载功率过大或负载过流</string>
+    <string name="b21">控制器温度过高</string>
+    <string name="b22">外部环境温度过高</string>
+    <string name="b23">光伏输入功率过大</string>
+    <string name="b24">光伏输入端短路</string>
+    <string name="b25">光伏输入端超压</string>
+    <string name="b26">太阳板逆流</string>
+    <string name="b27">太阳板工作点超压</string>
+    <string name="b28">太阳板异常</string>
+    <string name="b29">Anti-reverse MOS short</string>
+    <string name="b30">circuit, charge MOS short circuit</string>
+
+    <string name="hint_login_first">请先登录为管理员才能修改数据</string>
+    <string name="click_mode_information_to_edit_and_modify">点击模式信息进行状态编辑和修改</string>
+    <string name="setting_success">设置同步路灯成功</string>
+    <string name="setting_failed">设置同步路灯失败，请重新设置</string>
+    <string name="refresh_success">刷新成功</string>
+    <string name="refresh_failed">刷新失败，请检查设备连接</string>
+
+    <string name="cool_white">冷白</string>
+    <string name="natural_white">自然白</string>
+    <string name="warm_white">暖白</string>
+
+    <string name="zero_percent">0%</string>
+    <string name="thirty_percent">30%</string>
+    <string name="fifty_percent">50%</string>
+    <string name="seventy_percent">70%</string>
+    <string name="one_hundred_percent">100%</string>
+
+    <string name="times">次</string>
+    <string name="days">天</string>
+
+</resources>

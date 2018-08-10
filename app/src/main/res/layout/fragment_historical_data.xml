@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/BaseToolbarStyle"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            style="@style/BaseToolbarTitleStyle"
+            android:text="@string/historical_data"/>
+
+
+        <TextView
+            android:id="@+id/tv_historical_data_logout_administrator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:text="@string/logout_administrator"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        style="@style/horizontal_parting_line_blue"></View>
+
+    <TextView
+        android:id="@+id/tv_historical_data_tourist_model"
+        style="@style/NormalBlueTextSizeStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:text="@string/historical_data_tourist_model"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/historical_data_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/lightBlue"
+        app:tabBackground="@null"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"/>
+
+    <FrameLayout
+        android:id="@+id/historical_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

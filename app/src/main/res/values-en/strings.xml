@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">Road Smart</string>
+
+    <string name="login">Login</string>
+    <string name="please_enter_the_login_account">Please Enter The Account</string>
+    <string name="please_enter_the_login_password">Please Enter The Password</string>
+    <string name="hint_account_or_password_error">Account Or Password Error</string>
+
+
+    <string name="homepage">Homepage</string>
+    <string name="work_mode">Work Mode</string>
+    <string name="historical_data">History Data</string>
+    <string name="about_us">About Us</string>
+
+    <string name="default_text">--</string>
+
+    <string name="company_name">Company Name</string>
+    <string name="company_address">Company Address</string>
+    <string name="customer_hotline">Hotline</string>
+    <string name="company_official_website">Website</string>
+    <string name="contact_mailbox">E-mail</string>
+    <string name="engineering_case">Engineering Case</string>
+
+    <string name="company_name_content">Socreat Electronics Technology Limited</string>
+    <string name="company_address_content">6-7F, Building 13A, Taihua Wutong Industrial Park, Gushu, Xixiang, Bao\'an, Shenzhen, China.</string>
+    <string name="customer_hotline_content">400&#8211;800&#8211;8526</string>
+    <string name="company_official_website_content">http://www.socreat.com/</string>
+    <string name="contact_mailbox_content">info@socreat.com</string>
+    <string name="engineering_case_website_content">http://www.socreat.com/case/</string>
+    <string name="hint_scan_qr_code">Scan QR Code\nFollow Official Account</string>
+
+    <string name="solar_panel">Solar Panel</string>
+    <string name="battery">Battery</string>
+    <string name="load">Load</string>
+
+    <string name="device_information">Device Information</string>
+    <string name="device_testing">Device Test</string>
+    <string name="start_testing">Starting Test</string>
+    <string name="being_testing">Testing&#8230;</string>
+    <string name="no_abnormal_device">No Abnormal Device</string>
+    <string name="format_abnormal_device">Abnormal Device%1$d</string>
+    <string name="click_testing">Click Test</string>
+    <string name="being_testing_and_waiting">Testing And Waiting&#8230;</string>
+    <string name="testing_normal">Test In Normal</string>
+    <string name="testing_abnormal">Test In Abnormal</string>
+    <string name="charging_voltage">ChgVolt</string>
+    <string name="charging_power">ChgPwr</string>
+    <string name="charging_current">ChgCur</string>
+    <string name="voltage">Voltage</string>
+    <string name="current">Current</string>
+    <string name="electricity">Electricity</string>
+    <string name="load_power">LoadPwr</string>
+    <string name="load_brightness">LoadBrt</string>
+    <string name="test_the_lights">TestBrt</string>
+    <string name="test_success">Test Success</string>
+    <string name="test_failed">Test Failed</string>
+    <string name="normal">Normal</string>
+    <string name="abnormal">Abnormal</string>
+    <string name="charging">Charging</string>
+    <string name="discharging">Discharging</string>
+
+    <string name="disconnected">Disconnected</string>
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="connected">Connected</string>
+    <string name="history_connect">History Connect</string>
+    <string name="other_device">Other Device</string>
+    <string name="refresh">Refresh</string>
+    <string name="clear">Clear</string>
+    <string name="setting">Setting</string>
+    <string name="hint_rationale_location">Requests The Permission To Locate</string>
+    <string name="hint_no_search_ble_device">Please Check The Permission To Locate</string>
+    <string name="device_type">Facility Type</string>
+    <string name="hardware_version">Hardware Version</string>
+    <string name="firmware_version">Firmware Version</string>
+    <string name="disconnect_device">Disconnect Device</string>
+    <string name="connect_device">Connect Device</string>
+    <string name="connecting_device">Connecting Device</string>
+    <string name="restore_factory_settings">Factory Data Reset</string>
+    <string name="hint_restore_factory_settings">Are You Sure To Factory Data Reset?</string>
+    <string name="restore_factory_settings_success">Factory Data Reset Success</string>
+    <string name="restore_factory_settings_failed">Factory Data Reset Failure</string>
+
+    <string name="logout_administrator">Logout</string>
+    <string name="work_mode_tourist_model">Guest Mode Now, For Changing Information Please Click Here To Login Admin Account</string>
+    <string name="historical_data_tourist_model">Guest Mode Now, For Viewing More Information Please Click Here To Login Admin Aaccount</string>
+
+    <string name="T_mode">T Mode</string>
+    <string name="M_mode">M Mode</string>
+    <string name="L_mode">L Mode</string>
+    <string name="U_mode">U Mode</string>
+    <string name="first_time_colon">FirstTm</string>
+    <string name="second_time_colon">SecTm</string>
+    <string name="three_time_colon">ThdTm</string>
+    <string name="four_time_colon">FourthTm</string>
+    <string name="first_power_colon">FirstPw</string>
+    <string name="second_power_colon">SecPw</string>
+    <string name="three_power_colon">ThdPw</string>
+    <string name="four_power_colon">FourthPw</string>
+    <string name="first_color_temperature_colon">FirstCT</string>
+    <string name="second_color_temperature_colon">SecCT</string>
+    <string name="three_color_temperature_colon">ThdCT</string>
+    <string name="four_color_temperature_colon">FourthCT</string>
+
+    <string name="morning_time_colon">MorLiTm</string>
+    <string name="morning_power_colon">MorLiPw</string>
+    <string name="morning_color_temperature_colon">MorLiCT</string>
+
+    <string name="have_one_power_colon">FsIndPw</string>
+    <string name="have_one_color_temperature_colon">FsIndCT</string>
+    <string name="induction_delay_colon">InduDly</string>
+    <string name="no_one_power_colon">FiNIndPw</string>
+    <string name="have_two_power_colon">SecIndPw</string>
+    <string name="have_two_color_temperature_colon">SecIndCT</string>
+    <string name="no_two_power_colon">SecNIndP</string>
+    <string name="no_people_color_temperature_colon">NonIndCT</string>
+    <string name="no_people_power_colon">NonIndPw</string>
+
+    <string name="light_control_voltage">LgtCtrlVolt</string>
+    <string name="between_light_control_voltage">Between 0.1V-60V</string>
+    <string name="light_control_delay">LgtCtrlDly</string>
+    <string name="between_light_control_delay">Between 0min-60min</string>
+    <string name="load_current">LoadCur</string>
+    <string name="color_light_source">CorLgt</string>
+    <string name="smart_power">IntelPwr</string>
+    <string name="temperature_protection">TempProt</string>
+    <string name="induction_distance">InduDist</string>
+    <string name="music_switch">MuzSw</string>
+    <string name="over_charge_voltage">OchgVolt</string>
+    <string name="between_over_charge_voltage">Between 0V-60V</string>
+    <string name="over_charge_return">OchgRtn</string>
+    <string name="between_over_charge_return">Between 0V-60V</string>
+    <string name="over_discharge_return">OdchgRtn</string>
+    <string name="between_over_discharge_return">Between 0V-60V</string>
+    <string name="over_discharge_voltage">OdchgVolt</string>
+    <string name="between_over_discharge_voltage">Between 0V-60V</string>
+
+    <string name="running_days">Run Days</string>
+    <string name="over_discharge_times">OveDchgTm</string>
+    <string name="filling_time">FulChgTm</string>
+    <string name="current_temperature">CurTemp</string>
+    <string name="minimum_voltage">MinVolt</string>
+    <string name="maximum_voltage">MaxVolt</string>
+    <string name="battery_voltage">BatVolt</string>
+    <string name="temperature">Temperature</string>
+    <string name="basic_data">Basic Data</string>
+    <string name="administrator_data">Administrator Data</string>
+    <string name="day_generating_capacity">TdGntCap</string>
+    <string name="day_power_consumption">TdPwrCsp</string>
+    <string name="day_charge_apm_hour">TdChgAh</string>
+    <string name="day_discharge_apm_hour">TdDchgAh</string>
+    <string name="battery_temperature">BatTemp</string>
+    <string name="protective_plate_temperature">ProBoTem</string>
+    <string name="control_board_temperature">CtrlBoTem</string>
+
+    <string name="format_maximum_voltage">MaxVolt: %1$sV</string>
+    <string name="format_minimum_voltage">MinVolt: %1$sV</string>
+    <string name="format_maximum_temperature">MaxTemp: %1$s℃</string>
+    <string name="format_minimum_temperature">MinTemp: %1$s℃</string>
+    <string name="format_day_generating_capacity">TdGntCap: %1$sKWH</string>
+    <string name="format_day_power_consumption">TdPwrCsp: %1$sKWH</string>
+    <string name="format_day_charge_apm_hour">TdChgAh: %1$sKAH</string>
+    <string name="format_day_discharge_apm_hour">TdDchgAh: %1$sKAH</string>
+
+    <string name="flicker">Flicker</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="red_green">Red Green</string>
+    <string name="red_blue">Red Blue</string>
+    <string name="green_blue">Green Blue</string>
+    <string name="put_out">Put Out</string>
+    <string name="set_color_light_source_success">Set CorLgt Success</string>
+    <string name="set_color_light_source_failed">Set CorLgt Failed</string>
+    <string name="set_smart_power_success">Set IntelPwr Success</string>
+    <string name="set_smart_power_failed">Set IntelPwr Failed</string>
+    <string name="set_induction_distance_success">Set InduDist Success</string>
+    <string name="set_induction_distance_failed">Set InduDist Failed</string>
+    <string name="set_temperature_protection_success">Set TempProt Success</string>
+    <string name="set_temperature_protection_failed">Set TempProt Failed</string>
+    <string name="set_music_switch_success">Set MuzSw Success</string>
+    <string name="set_music_switch_failed">Set MuzSw Failed</string>
+    <string name="set_light_control_voltage_success">Set LgtCtrlVolt Success</string>
+    <string name="set_light_control_voltage_failed">Set LgtCtrlVolt Failed</string>
+    <string name="set_light_control_delay_success">Set LgtCtrlDly Success</string>
+    <string name="set_light_control_delay_failed">Set LgtCtrlDly Failed</string>
+    <string name="set_load_current_success">Set LoadCur Success</string>
+    <string name="set_load_current_failed">Set LoadCur Failed</string>
+    <string name="set_over_charge_voltage_success">Set OchgVolt Success</string>
+    <string name="set_over_charge_voltage_failed">Set OchgVolt Failed</string>
+    <string name="set_over_charge_return_success">Set OchgRtn Success</string>
+    <string name="set_over_charge_return_failed">Set OchgRtn Failed</string>
+    <string name="set_over_discharge_voltage_success">Set OdchgVolt Success</string>
+    <string name="set_over_discharge_voltage_failed">Set OdchgVolt Failed</string>
+    <string name="set_over_discharge_return_success">Set OdchgRtn Success</string>
+    <string name="set_over_discharge_return_failed">Set OdchgRtn Failed</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="one_level">One Level</string>
+    <string name="two_level">Two Level</string>
+    <string name="three_level">Three Level</string>
+    <string name="four_level">Four Level</string>
+    <string name="five_level">Five Level</string>
+    <string name="six_level">Six Level</string>
+    <string name="seven_level">Seven Level</string>
+    <string name="eight_level">Eight Level</string>
+    <string name="automatic">Automatic</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="input_value">Input Value</string>
+    <string name="hint_input_value">Please Input Value</string>
+
+    <string name="please_select_check_time">Please Select Time</string>
+    <string name="year">Year</string>
+    <string name="all">All</string>
+
+
+    <string name="b16">Battery OveDchg</string>
+    <string name="b17">Battery Over Voltage</string>
+    <string name="b18">Warning: Battery Under Voltage</string>
+    <string name="b19">LoadAbn</string>
+    <string name="b20">The Loadpwr Is Too Large Or Overloadcur</string>
+    <string name="b21">Controller Is Overheating</string>
+    <string name="b22">The External Environment Temparature Is Too High</string>
+    <string name="b23">PV Input Power Exceeded</string>
+    <string name="b24">PV Input End Short Circuit</string>
+    <string name="b25">PV Input End Over Voltage</string>
+    <string name="b26">Solar Panel Counter Current</string>
+    <string name="b27">Solar Panel Operating Poin Is Over Voltage</string>
+    <string name="b28">BatAbn</string>
+    <string name="b29">Anti-reverse MOS short</string>
+    <string name="b30">circuit, charge MOS short circuit</string>
+
+    <string name="hint_login_first">Please Login First</string>
+    <string name="click_mode_information_to_edit_and_modify">Click Mode Information To Edit And Change State</string>
+    <string name="setting_success">Setting Success</string>
+    <string name="setting_failed">Setting Failed</string>
+    <string name="refresh_success">Refresh Success</string>
+    <string name="refresh_failed">Refresh Failed</string>
+
+    <string name="cool_white">Cool White</string>
+    <string name="natural_white">Natural White</string>
+    <string name="warm_white">Warm White</string>
+
+    <string name="zero_percent">0%</string>
+    <string name="thirty_percent">30%</string>
+    <string name="fifty_percent">50%</string>
+    <string name="seventy_percent">70%</string>
+    <string name="one_hundred_percent">100%</string>
+
+    <string name="times">Times</string>
+    <string name="days">Days</string>
+</resources>

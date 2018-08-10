@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/rounded_rectangle_blue_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_the_lights"
+        style="@style/NormalBlackTextSizeStyle"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/textGray"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <RadioGroup
+            android:id="@+id/homepage_type_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:checked="true"
+                android:gravity="center"
+                style="@style/SmallTextSizeStyle"
+                android:background="@null"
+                android:id="@+id/rb_homepage_type_zero_percent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableTop="@drawable/bg_homepage_load_check"
+                android:drawablePadding="5dp"
+                android:text="@string/zero_percent"
+                android:textColor="@drawable/homepage_load_text_check"
+                />
+
+            <RadioButton
+                android:gravity="center"
+                style="@style/SmallTextSizeStyle"
+                android:background="@null"
+                android:id="@+id/rb_homepage_type_thirty_percent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableTop="@drawable/bg_homepage_load_check"
+                android:drawablePadding="5dp"
+                android:text="@string/thirty_percent"
+                android:textColor="@drawable/homepage_load_text_check"
+                />
+
+
+            <RadioButton
+                android:gravity="center"
+                style="@style/SmallTextSizeStyle"
+                android:background="@null"
+                android:id="@+id/rb_homepage_type_fifty_percent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableTop="@drawable/bg_homepage_load_check"
+                android:drawablePadding="5dp"
+                android:text="@string/fifty_percent"
+                android:textColor="@drawable/homepage_load_text_check"
+                />
+
+
+            <RadioButton
+                android:gravity="center"
+                style="@style/SmallTextSizeStyle"
+                android:background="@null"
+                android:id="@+id/rb_homepage_type_seventy_percent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableTop="@drawable/bg_homepage_load_check"
+                android:drawablePadding="5dp"
+                android:text="@string/seventy_percent"
+                android:textColor="@drawable/homepage_load_text_check"
+                />
+
+
+            <RadioButton
+                android:gravity="center"
+                style="@style/SmallTextSizeStyle"
+                android:background="@null"
+                android:id="@+id/rb_homepage_type_one_hundred_percent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableTop="@drawable/bg_homepage_load_check"
+                android:drawablePadding="5dp"
+                android:text="@string/one_hundred_percent"
+                android:textColor="@drawable/homepage_load_text_check"
+                />
+
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_homepage_type_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layoutManager="LinearLayoutManager"/>
+
+    <TextView
+        android:id="@+id/tv_homepage_type_status"
+        style="@style/NormalWhiteTextSizeStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textGreen"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/normal"
+        />
+
+</LinearLayout>
+
+

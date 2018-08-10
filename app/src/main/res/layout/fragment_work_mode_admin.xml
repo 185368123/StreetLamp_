@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/work_mode_admin_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/textBlue"
+            app:tabTextColor="@color/textGray"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/work_mode_admin_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_work_mode_admin_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            app:layoutManager="LinearLayoutManager"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
