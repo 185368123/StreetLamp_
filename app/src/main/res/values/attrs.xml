@@ -297,5 +297,14 @@
         <item>@string/natural_white</item>
         <item>@string/cool_white</item>
     </string-array>
-
+    <string-array name="historical_data_day">
+        <item>@string/day7</item>
+        <item>@string/day6</item>
+        <item>@string/day5</item>
+        <item>@string/day4</item>
+        <item>@string/day3</item>
+        <item>@string/day2</item>
+        <item>@string/day1</item>
+        <item>@string/day0</item>
+    </string-array>
 </resources>

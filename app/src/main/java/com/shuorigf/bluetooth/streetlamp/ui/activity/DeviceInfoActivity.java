@@ -94,7 +94,8 @@ public class DeviceInfoActivity extends BaseActivity {
         mContentRv.setNestedScrollingEnabled(false);
         mSearchRv.setNestedScrollingEnabled(false);
         String historyConnectStr = mSPUtils.getString(SPUtils.SP_HISTORY_CONNECT, "[]");
-        mHistoryConnectList = GsonUtil.fromJson(historyConnectStr, new TypeToken<ArrayList<BleDeviceInfo>>(){});
+        mHistoryConnectList = GsonUtil.fromJson(historyConnectStr, new TypeToken<ArrayList<BleDeviceInfo>>() {
+        });
         if (mHistoryConnectList == null) {
             mHistoryConnectList = new ArrayList<>();
         }
@@ -114,7 +115,7 @@ public class DeviceInfoActivity extends BaseActivity {
         switchState();
         mac = getIntent().getStringExtra(Constants.MAC);
         if (!TextUtils.isEmpty(mac)) {
-            if ( mLeScanner!= null) {
+            if (mLeScanner != null) {
                 mLeScanner.connect(mac);
             }
         }
@@ -124,7 +125,7 @@ public class DeviceInfoActivity extends BaseActivity {
     }
 
     private void initReadData() {
-        if ( mLeScanner!= null) {
+        if (mLeScanner != null) {
             mLeScanner.addFirstList(new ReadData(Constants.TYPE_DEVICE_PRODUCT,
                     ModbusData.buildReadRegsCmd(mLeScanner.getDeviceId(), ShourigfData.DeviceProductType.REG_ADDR, ShourigfData.DeviceProductType.READ_WORD)));
             mLeScanner.addFirstList(new ReadData(Constants.TYPE_DEVICE_VERSION,
@@ -185,10 +186,10 @@ public class DeviceInfoActivity extends BaseActivity {
                 }
                 mHistoryConnectList.add(bleDeviceInfo);
                 mSPUtils.put(SPUtils.SP_HISTORY_CONNECT, GsonUtil.toJson(mHistoryConnectList));
-               if (mLeScanner != null) {
-                   mac = bleDeviceInfo.mMacAddress;
-                   mLeScanner.connect(mac);
-               }
+                if (mLeScanner != null) {
+                    mac = bleDeviceInfo.mMacAddress;
+                    mLeScanner.connect(mac);
+                }
             }
         });
     }
@@ -212,20 +213,20 @@ public class DeviceInfoActivity extends BaseActivity {
             if (LeScanner.ACTION_START_SCAN.equals(action)) {
                 mRefreshTv.setVisibility(View.GONE);
                 mRefreshPgb.setVisibility(View.VISIBLE);
-            }else if (LeScanner.ACTION_STOP_SCAN.equals(action)) {
+            } else if (LeScanner.ACTION_STOP_SCAN.equals(action)) {
                 mRefreshTv.setVisibility(View.VISIBLE);
                 mRefreshPgb.setVisibility(View.GONE);
-            }else if (LeScanner.ACTION_FINISH_SCAN.equals(action)) {
+            } else if (LeScanner.ACTION_FINISH_SCAN.equals(action)) {
                 mRefreshTv.setVisibility(View.VISIBLE);
                 mRefreshPgb.setVisibility(View.GONE);
                 if (mSearchList.size() == 0) {
                     showNoSearchDialog();
                 }
-            }else if (LeScanner.ACTION_GET_ID.equals(action)) {
+            } else if (LeScanner.ACTION_GET_ID.equals(action)) {
                 initReadData();
-            }else if (LeScanner.ACTION_DATA_AVAILABLE.equals(action)) {
+            } else if (LeScanner.ACTION_DATA_AVAILABLE.equals(action)) {
                 receiveData(intent.getIntExtra(LeScanner.EXTRA_TYPE, 0), intent.getByteArrayExtra(LeScanner.EXTRA_DATA));
-            }else {
+            } else {
                 switchState();
                 if (mSearchAdapter != null) {
                     mSearchAdapter.notifyDataSetChanged();
@@ -249,19 +250,19 @@ public class DeviceInfoActivity extends BaseActivity {
             case Constants.TYPE_RESTORE_FACTORY_SETTINGS:
                 if (ModbusData.resetFactorySettingsSuccess(data)) {
                     ToastUtil.showShortToast(this, R.string.restore_factory_settings_success);
-                }else {
+                } else {
                     ToastUtil.showShortToast(this, R.string.restore_factory_settings_failed);
                 }
                 break;
         }
-        if (mDeviceInformationAdapter != null ) {
+        if (mDeviceInformationAdapter != null) {
             mDeviceInformationAdapter.notifyDataSetChanged();
         }
     }
 
 
     private void switchState() {
-        switch(mLeScanner.getState()) {
+        switch (mLeScanner.getState()) {
             case LeScanner.STATE_DISCONNECTED:
                 mStateTv.setText(R.string.connect_device);
                 break;
@@ -285,7 +286,7 @@ public class DeviceInfoActivity extends BaseActivity {
                         Intent intent = new Intent(this, DeviceListActivity.class);
                         startActivity(intent);
                         finish();
-                    }else if (mLeScanner.getState() == LeScanner.STATE_DISCONNECTED) {
+                    } else if (mLeScanner.getState() == LeScanner.STATE_DISCONNECTED) {
                         if (!TextUtils.isEmpty(mac)) {
                             if (mLeScanner != null) {
                                 mLeScanner.connect(mac);
@@ -305,6 +306,7 @@ public class DeviceInfoActivity extends BaseActivity {
 
     @AfterPermissionGranted(Constants.REQUEST_CODE_LOCATION_PERM)
     public void refresh() {
+
         if (EasyPermissions.hasPermissions(this, Constants.LOCATION_PERM)) {
             // Have permissions, do the thing!
             startScan();

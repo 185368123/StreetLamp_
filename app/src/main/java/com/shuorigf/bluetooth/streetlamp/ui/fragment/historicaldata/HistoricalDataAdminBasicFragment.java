@@ -29,8 +29,10 @@ import com.shuorigf.bluetooth.streetlamp.data.HistoricalDataInfo;
 import com.shuorigf.bluetooth.streetlamp.data.ReadData;
 import com.shuorigf.bluetooth.streetlamp.util.Constants;
 import com.shuorigf.bluetooth.streetlamp.util.ConvertUtils;
+import com.shuorigf.bluetooth.streetlamp.util.LogTools;
 import com.shuorigf.bluetooth.streetlamp.util.TimeUtils;
 
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -46,6 +48,7 @@ import butterknife.OnClick;
  */
 
 public class HistoricalDataAdminBasicFragment extends BaseFragment {
+
     @BindView(R.id.rv_historical_data_non_admin_content)
     RecyclerView mContentRv;
     @BindView(R.id.historical_data_non_admin_tablayout)
@@ -250,10 +253,12 @@ public class HistoricalDataAdminBasicFragment extends BaseFragment {
     private void receiveData(int type, byte[] data) {
         switch (type) {
             case Constants.TYPE_HISTORICAL_DATA:
+                LogTools.e("收到TYPE_HISTORICAL_DATA:",ConvertUtils.bytes2HexString(data));
                 ShourigfData.HistoricalDataInfo historicalDataInfo = new ShourigfData.HistoricalDataInfo(data);
                 mHistoricalDataInfo.mAllRunDays = historicalDataInfo.mAllRunDays;
                 mHistoricalDataInfo.mBatteryChargeFullTimes = historicalDataInfo.mBatteryChargeFullTimes;
                 mHistoricalDataInfo.mBatteryAllDischargeTimes = historicalDataInfo.mBatteryAllDischargeTimes;
+                mHistoricalDataInfo.mCurrentTemperatur = historicalDataInfo.mDayMaxTemperature;
                 if (mHistoricalDataNonAdminAdapter != null) {
                     mHistoricalDataNonAdminAdapter.notifyDataSetChanged();
                 }
@@ -264,18 +269,20 @@ public class HistoricalDataAdminBasicFragment extends BaseFragment {
                 }
                 break;
             case Constants.TYPE_BATTERY:
+                LogTools.e("收到TYPE_BATTERY:",ConvertUtils.bytes2HexString(data));
                 ShourigfData.BatteryInfo batteryInfo = new ShourigfData.BatteryInfo(data);
-                mHistoricalDataInfo.mCurrentTemperatur = batteryInfo.mDeviceTemperature;
+               // mHistoricalDataInfo.mCurrentTemperatur = batteryInfo.mDeviceTemperature;
                 if (mHistoricalDataNonAdminAdapter != null) {
                     mHistoricalDataNonAdminAdapter.notifyDataSetChanged();
                 }
                 break;
             case Constants.TYPE_HISTORICAL_CHART_DATA_ADMIN_BASIC:
+                LogTools.e("收到DATA_ADMIN_BASIC:",ConvertUtils.bytes2HexString(data));
                 ShourigfData.HistoricalChartDataInfo historicalChartDataInfo = new ShourigfData.HistoricalChartDataInfo(data);
                 mHistoricalChartDataInfos.add(historicalChartDataInfo);
-
                 break;
             case Constants.TYPE_HISTORICAL_CHART_DATA_ADMIN_BASIC_END:
+                LogTools.e("收到ADMIN_BASIC_END:",ConvertUtils.bytes2HexString(data));
                 ShourigfData.HistoricalChartDataInfo historicalChartDataInfoEnd = new ShourigfData.HistoricalChartDataInfo(data);
                 mHistoricalChartDataInfos.add(historicalChartDataInfoEnd);
                     for (Fragment fragment : fragments) {
@@ -403,7 +410,6 @@ public class HistoricalDataAdminBasicFragment extends BaseFragment {
                 options2Items.add(yearList);
                 options3Items.add(monthList);
             }
-
             mOptionsPickerView.setPicker(options1Items, options2Items, options3Items);//三级选择器
         }
 

@@ -1,5 +1,10 @@
 package com.shuorigf.bluetooth.streetlamp.ble;
 
+import android.util.Log;
+
+import com.shuorigf.bluetooth.streetlamp.util.ConvertUtils;
+import com.shuorigf.bluetooth.streetlamp.util.LogTools;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -465,7 +470,6 @@ public class ShourigfData {
 				mHaveTwoColorTemperature =  Bytes2Int(bs,21,2);
 				mNoTwoPower = Bytes2Int(bs,23,2);
 				mNoPeopleColorTemperature = Bytes2Int(bs,25,2);
-
 			}
 		}
 	};
@@ -672,6 +676,12 @@ public class ShourigfData {
 			mDataIsCorrect = ModbusData.dataCorrect(bs,READ_WORD);
 			if(mDataIsCorrect)
 			{
+				LogTools.e("mDayBatteryMinVoltage", ConvertUtils.bytes2HexString(bs[3])+ConvertUtils.bytes2HexString(bs[4]));
+				LogTools.e("mDayBatteryMaxVoltage", ConvertUtils.bytes2HexString(bs[5])+ConvertUtils.bytes2HexString(bs[6]));
+				LogTools.e("mDayChargeAmpHour", ConvertUtils.bytes2HexString(bs[15])+ConvertUtils.bytes2HexString(bs[16]));
+				LogTools.e("mDayDischargeAmpHour", ConvertUtils.bytes2HexString(bs[17])+ConvertUtils.bytes2HexString(bs[18]));
+				LogTools.e("mDayMaxTemperature", ConvertUtils.bytes2HexString(bs[19])+ConvertUtils.bytes2HexString(bs[20]));
+				LogTools.e("mDayMinTemperature", ConvertUtils.bytes2HexString(bs[21])+ConvertUtils.bytes2HexString(bs[22]));
 				mDayBatteryMinVoltage =  (new BigDecimal(Bytes2Int(bs,3,2) + "").multiply(new BigDecimal("0.01"))).floatValue();
 				mDayBatteryMaxVoltage =  (new BigDecimal(Bytes2Int(bs,5,2) + "").multiply(new BigDecimal("0.01"))).floatValue();
 				mDayChargeAmpHour = (new BigDecimal(Bytes2Int(bs,15,2) + "").multiply(new BigDecimal("0.001"))).floatValue();

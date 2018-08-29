@@ -15,6 +15,7 @@ public class Constants {
     public static final String[] Y_YEAR = {"2014", "2015", "2016", "2017", "2018"};
     public static final String[] Y_MONTH = {"01", "03", "05", "07", "09", "11"};
     public static final String[] Y_DAY = {"01", "04", "07", "11", "14", "17", "21", "24", "27"};
+    public static final String[] X_DAY = {"7天前", "6天前", "5天前", "4天前", "3天前", "2天前", "1天前", "当天"};
 
     public static final String MAC = "MAC";
     public static final String DEVICE_INFO = "device_info";

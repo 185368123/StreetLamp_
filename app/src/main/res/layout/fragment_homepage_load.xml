@@ -131,10 +131,6 @@
 
     </RelativeLayout>
 
-
-
-
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_homepage_type_content"
         android:layout_width="match_parent"

@@ -1,5 +1,7 @@
 package com.shuorigf.bluetooth.streetlamp.ui.fragment.historicaldata;
 
+import android.content.res.TypedArray;
+import android.graphics.Matrix;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
@@ -22,6 +24,7 @@ import com.shuorigf.bluetooth.streetlamp.util.TimeUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindArray;
 import butterknife.BindView;
 
 /**
@@ -35,7 +38,9 @@ public class HistoricalDataChartFragment extends BaseFragment {
     TextView mTitleRightTv;
     @BindView(R.id.historical_data_chart_line_chart)
     LineChart mLineChart;
-
+    @BindArray(R.array.historical_data_day)
+    TypedArray mDays;
+    String[] days;
     private int type;
 
     public static HistoricalDataChartFragment newInstance(int res) {
@@ -63,6 +68,11 @@ public class HistoricalDataChartFragment extends BaseFragment {
      */
     @Override
     public void init(Bundle savedInstanceState) {
+        List<String>  list=new ArrayList<>();
+        for (int i = 0; i < mDays.length(); i++) {
+            list.add(mDays.getString(i));
+        }
+        days=(String[]) list.toArray(new String[8]);
         type = getArguments().getInt(Constants.TYPE_HISTORICAL_DATA_CONTENT);
         initLineChart();
     }
@@ -100,10 +110,7 @@ public class HistoricalDataChartFragment extends BaseFragment {
         xAxis.setDrawAxisLine(false);
         xAxis.setGranularity(1f);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-//        xAxis.enableGridDashedLine(10f, 10f, 0f);
-        //xAxis.setValueFormatter(new MyCustomXAxisValueFormatter());
-        //xAxis.addLimitLine(llXAxis); // add x-axis limit line
-
+        xAxis.setLabelRotationAngle(45f);
 
         YAxis leftAxis = mLineChart.getAxisLeft();
         leftAxis.setTextColor(ContextCompat.getColor(getContext(), R.color.textBlue));
@@ -177,10 +184,8 @@ public class HistoricalDataChartFragment extends BaseFragment {
         if (historicalChartDataInfos == null) {
             return;
         }
-//        mLineChart.setScaleMinima(1.0f, 1.0f);
-//        mLineChart.getViewPortHandler().refresh(new Matrix(), mLineChart, true);
         if (historicalChartDataInfos.size() > 6) {
-            mLineChart.getXAxis().setValueFormatter(new MyXFormatter(TimeUtils.getOld7Day()));
+            mLineChart.getXAxis().setValueFormatter(new MyXFormatter(days));
         }else if (historicalChartDataInfos.size() > 5){
             mLineChart.getXAxis().setValueFormatter(new MyXFormatter(Constants.Y_MONTH));
         }else{

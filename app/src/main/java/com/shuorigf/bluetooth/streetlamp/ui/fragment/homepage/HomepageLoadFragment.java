@@ -145,7 +145,7 @@ public class HomepageLoadFragment extends BaseFragment {
                 if (mLoadInfoAdapter != null) {
                     mLoadInfoAdapter.notifyDataSetChanged();
                 }
-                if(batteryState.mLampBrightness == 0) {
+               /* if(batteryState.mLampBrightness == 0) {
                     radioGroup.check(R.id.rb_homepage_type_zero_percent);
                 }else if(batteryState.mLampBrightness <= 30) {
                     radioGroup.check(R.id.rb_homepage_type_thirty_percent);
@@ -156,7 +156,7 @@ public class HomepageLoadFragment extends BaseFragment {
                 }else if(batteryState.mLampBrightness <= 100) {
                     radioGroup.check(R.id.rb_homepage_type_one_hundred_percent);
                 }
-                mLastCheckId = radioGroup.getCheckedRadioButtonId();
+                mLastCheckId = radioGroup.getCheckedRadioButtonId();*/
                 break;
             case Constants.TYPE_SET_LAMP_BRIGHTNESS:
                 if (ModbusData.writeSigRegSuccess(data)) {

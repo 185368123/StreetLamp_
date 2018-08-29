@@ -253,4 +253,12 @@
     <string name="times">次</string>
     <string name="days">天</string>
 
+    <string name="day0">当天</string>
+    <string name="day1">前1天</string>
+    <string name="day2">前2天</string>
+    <string name="day3">前3天</string>
+    <string name="day4">前4天</string>
+    <string name="day5">前5天</string>
+    <string name="day6">前6天</string>
+    <string name="day7">前7天</string>
 </resources>

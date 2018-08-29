@@ -50,7 +50,7 @@ public class LogTools {
 	
 	public static void d(String tag, String msg) {
 		if (isDebug) {
-			Log.d(tag, msg);
+			Log.d(tag, msg+"/n");
 		}
 		
 		if(isWrite)

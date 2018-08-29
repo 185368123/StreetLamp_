@@ -205,6 +205,7 @@ public class DeviceListFragment extends BaseFragment {
 
     @AfterPermissionGranted(Constants.REQUEST_CODE_LOCATION_PERM)
     public void refresh() {
+
         if (EasyPermissions.hasPermissions(getContext(), Constants.LOCATION_PERM)) {
             // Have permissions, do the thing!
             startScan();

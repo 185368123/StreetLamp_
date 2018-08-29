@@ -252,4 +252,13 @@
 
     <string name="times">Times</string>
     <string name="days">Days</string>
+
+    <string name="day0">Today</string>
+    <string name="day1">Yesterday</string>
+    <string name="day2">The day before yesterday</string>
+    <string name="day3">Three days ago</string>
+    <string name="day4">Four days ago</string>
+    <string name="day5">Five days ago</string>
+    <string name="day6">Six days ago</string>
+    <string name="day7">Seven days ago</string>
 </resources>

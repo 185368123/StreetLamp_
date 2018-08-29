@@ -49,6 +49,20 @@ public class ConvertUtils {
         }
         return new String(ret);
     }
+    /**
+     * byteArr转hexString
+     * <p>例如：</p>
+     * bytes2HexString(new byte[] { 0, (byte) 0xa8 }) returns 00A8
+     *
+     * @param bytes 字节数组
+     * @return 16进制大写字符串
+     */
+    public static String bytes2HexString(byte bytes) {
+        char[] ret = new char[2];
+            ret[0] = hexDigits[bytes >>> 4 & 0x0f];
+            ret[1] = hexDigits[bytes & 0x0f];
+        return new String(ret);
+    }
 
     /**
      * hexString转byteArr

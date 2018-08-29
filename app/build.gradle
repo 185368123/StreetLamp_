@@ -7,8 +7,8 @@ android {
         applicationId "com.shuorigf.bluetooth.streetlamp"
         minSdkVersion 18
         targetSdkVersion 26
-        versionCode 12
-        versionName "1.9"
+        versionCode 13
+        versionName "1.9.1"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -56,7 +56,7 @@ android {
         release {
             storeFile file("streetlamp")
             storePassword "s123456"
-            keyAlias "streetlamp"
+            keyAlias "key0"
             keyPassword "s123456"
         }
     }
